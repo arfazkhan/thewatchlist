@@ -1,5 +1,3 @@
-Here's the updated version of the README based on the updates we made to the project:
-
 # The Watch List
 
 Welcome to **The Watch List**! This sleek, responsive React application is your ultimate companion for curating and managing your movie watchlist. With a modern UI and a host of features, The Watch List ensures a seamless and enjoyable experience for browsing and discovering your next cinematic adventure. Whether you're a die-hard movie buff or a casual viewer, this app has got you covered.
