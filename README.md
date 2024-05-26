@@ -1,6 +1,10 @@
+
+
 # The Watch List
 
-Welcome to **The Watch List**! This sleek, responsive React application is your ultimate companion for curating and managing your movie watchlist. With a modern UI and a host of features, The Watch List ensures a seamless and enjoyable experience for browsing and discovering your next cinematic adventure. Whether you're a die-hard movie buff or a casual viewer, this app has got you covered.
+![The Watch List Screenshot](./src/assets/thumb.png)
+
+Welcome to **The WatchList.**! This sleek, responsive React application is your ultimate companion for curating and managing your movie watchlist. With a modern UI and a host of features, The Watch List ensures a seamless and enjoyable experience for browsing and discovering your next cinematic adventure. Whether you're a die-hard movie buff or a casual viewer, this app has got you covered.
 
 ## Features
 
@@ -12,6 +16,12 @@ Welcome to **The Watch List**! This sleek, responsive React application is your 
 - **Clear Favorites**: Easily remove all favorite movies with a single click.
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
 - **Dark Mode**: Enjoy a sleek dark mode interface.
+
+
+## Demo
+
+Check out the live demo: [The WatchList. Demo](https://thewatchlist-one.vercel.app/)
+Code Explaination: [The WatchList.](https://drive.google.com/file/d/1XFtl3a_8upU9jk1Z27r_75tYScd6Ri8P/view?usp=drive_link)
 
 ## Getting Started
 
@@ -103,6 +113,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Thank you for using **The Watch List**! We hope you enjoy your cinematic journey. For any questions or feedback, please feel free to open an issue or contact the project maintainers.
-
+Thank you for using **The WatchList.**! We hope you enjoy your cinematic journey. For any questions or feedback, please feel free to open an issue or contact the project maintainers.
 
