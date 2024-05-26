@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import MovieCard from '../components/MovieCard';
 import { clearFavorites } from '../redux/slices/favoritesSlice';
 import Toast from '../components/Toast';
@@ -49,6 +50,11 @@ const FavoriteMovies = () => {
       ) : (
         <div className="no-favorites">
           <h2 className="no-favorites-text">Sorry! No favorites added.</h2>
+          <Link to="/" className="add-favorites-link">
+            <button className="add-favorites-button">
+              Explore the Cinematic Universe
+            </button>
+          </Link>
         </div>
       )}
       {showToast && <Toast message={toastMessage} />}

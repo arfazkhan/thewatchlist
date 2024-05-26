@@ -50,6 +50,39 @@
   font-size: 24px;
   text-align: center;
 }
+.no-favorites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.no-favorites-text {
+  color: #a8aebf;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-favorites-link {
+  text-decoration: none;
+}
+
+.add-favorites-button {
+  background-color: #061417;
+  color: #a8aebf;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-favorites-button:hover {
+  background-color: #0c2b33;
+}
 
 /* Media queries for responsiveness */
 
