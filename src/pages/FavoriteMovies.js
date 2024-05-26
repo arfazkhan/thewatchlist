@@ -27,22 +27,30 @@ const FavoriteMovies = () => {
 
   return (
     <div className="favorite-movies-container">
-      <div className="header">
-        <h2 className="fav-header">Your Favorite Movies</h2>
-        <button className="clear-favorites-button" onClick={handleClearFavorites}>
-          Clear Favorites
-        </button>
-      </div>
-      <div className="movie-list">
-        {favorites.map((movie) => (
-          <MovieCard
-            key={movie.id}
-            movie={movie}
-            isFavoritePage={true}
-            onRemoveFromFavorites={handleRemoveFromFavorites}
-          />
-        ))}
-      </div>
+      {favorites.length > 0 ? (
+        <>
+          <div className="header">
+            <h2 className="fav-header">Your Favorite Movies</h2>
+            <button className="clear-favorites-button" onClick={handleClearFavorites}>
+              Clear Favorites
+            </button>
+          </div>
+          <div className="movie-list">
+            {favorites.map((movie) => (
+              <MovieCard
+                key={movie.id}
+                movie={movie}
+                isFavoritePage={true}
+                onRemoveFromFavorites={handleRemoveFromFavorites}
+              />
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className="no-favorites">
+          <h2 className="no-favorites-text">Sorry! No favorites added.</h2>
+        </div>
+      )}
       {showToast && <Toast message={toastMessage} />}
     </div>
   );

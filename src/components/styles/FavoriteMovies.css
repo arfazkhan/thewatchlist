@@ -38,6 +38,19 @@
   justify-content: center;
 }
 
+.no-favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.no-favorites-text {
+  color: #a8aebf;
+  font-size: 24px;
+  text-align: center;
+}
+
 /* Media queries for responsiveness */
 
 /* Tablets */
