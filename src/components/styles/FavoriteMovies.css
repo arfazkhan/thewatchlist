@@ -13,13 +13,13 @@
 }
 
 .fav-header {
-  color: #fff;
+  color: #A8AEBF;
   font-size: 20px;
 }
 
 .clear-favorites-button {
   background-color: transparent; /* Change background color to transparent */
-  color: #ff0000; /* Use red color for text */
+  color: #A8AEBF; /* Use red color for text */
   border: none;
   padding: 8px 16px;
   cursor: pointer;

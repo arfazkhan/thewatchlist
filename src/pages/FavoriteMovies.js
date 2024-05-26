@@ -19,7 +19,7 @@ const FavoriteMovies = () => {
       <div className="header">
         <h2 className='fav-header'>Your Favorite Movies</h2>
         <button className="clear-favorites-button" onClick={handleClearFavorites}>
-          Clear Favorites
+          Clear
         </button>
       </div>
       <div className="movie-list">
