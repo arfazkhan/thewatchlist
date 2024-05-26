@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavorite, removeFavorite } from '../redux/slices/favoritesSlice';
 import { FaHeart, FaStar, FaTimes } from 'react-icons/fa'; // Import heart, star, and cross icons
-import './MovieCard.css';
-import './MovieList.css';
+import './styles/MovieCard.css';
+import './styles/MovieList.css';
 import posterImage from '../assets/p1.png'; // Import the poster image
 import Toast from './Toast'; // Import the Toast component
 

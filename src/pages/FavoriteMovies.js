@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import MovieCard from '../components/MovieCard';
 import { clearFavorites } from '../redux/slices/favoritesSlice'; // Import the action to clear favorites
-import '../components/FavoriteMovies.css'; // Correct path to the CSS file
+import '../components/styles/FavoriteMovies.css'; // Correct path to the CSS file
 
 const FavoriteMovies = () => {
   const dispatch = useDispatch();

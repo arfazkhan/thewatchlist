@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchMovies, filterMovies, setSearchQuery } from '../redux/slices/moviesSlice';
 import MovieCard from './MovieCard';
 import { FaSearch } from 'react-icons/fa';
-import './MovieList.css';
+import './styles/MovieList.css';
 
 const MovieList = () => {
   const dispatch = useDispatch();
