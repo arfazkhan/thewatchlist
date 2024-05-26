@@ -39,7 +39,7 @@ const MovieList = ({ onAddToFavorites }) => {
         <FaSearch className="search-icon" />
       </div>
       <div className="movie-list">
-        {movies.length === 0 && searchQuery.length >= 3 && <div>No movies found.</div>}
+        {movies.length === 0 && searchQuery.length >= 3 && <div className='no'>No movies found.</div>}
         {movies.map(movie => (
           <MovieCard
             key={movie.id}
