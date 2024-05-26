@@ -26,8 +26,8 @@ Ensure you have the following installed on your machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/arfazkhan/the-watch-list.git
-   cd the-watch-list
+   git clone https://github.com/arfazkhan/thewatchlist.git
+   cd thewatchlist
    ```
 
 2. **Install Dependencies**:
