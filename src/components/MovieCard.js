@@ -5,7 +5,7 @@ import { FaHeart, FaStar, FaTimes } from 'react-icons/fa';
 import './styles/MovieCard.css';
 import posterImage from '../assets/p1.png';
 
-const MovieCard = ({ movie, onAddToFavorites }) => {
+const MovieCard = ({ movie, onAddToFavorites, isFavoritePage }) => {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites);
   const isFavorite = favorites.some(fav => fav.id === movie.id);
@@ -40,7 +40,11 @@ const MovieCard = ({ movie, onAddToFavorites }) => {
           className={`favorite-button ${isFavorite ? 'favorited' : ''}`}
           onClick={handleFavoriteToggle}
         >
-          {isFavorite ? <FaTimes className="cross-icon" /> : <FaHeart className="heart-icon" />}
+          {isFavorite && isFavoritePage && isHovered ? (
+            <FaTimes className="cross-icon" />
+          ) : (
+            <FaHeart className="heart-icon" />
+          )}
         </button>
       </div>
       <div className="title-footer">
