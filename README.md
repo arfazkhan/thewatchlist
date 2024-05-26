@@ -20,8 +20,8 @@ Welcome to **The WatchList.**! This sleek, responsive React application is your 
 
 ## Demo
 
-Check out the live demo: [The WatchList. Demo](https://thewatchlist-one.vercel.app/)
-Code Explaination: [The WatchList.](https://drive.google.com/file/d/1XFtl3a_8upU9jk1Z27r_75tYScd6Ri8P/view?usp=drive_link)
+- Check out the live demo: [The WatchList. Demo](https://thewatchlist-one.vercel.app/)
+- Code Explaination: [The WatchList.](https://drive.google.com/file/d/1XFtl3a_8upU9jk1Z27r_75tYScd6Ri8P/view?usp=drive_link)
 
 ## Getting Started
 
