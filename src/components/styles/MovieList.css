@@ -41,6 +41,9 @@
     justify-content: center;
   }
   
+  .no {
+    color: #f3f6ff;
+  }
 
   @media (min-width: 1200px) {
     .search-container {
