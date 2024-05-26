@@ -1,0 +1,63 @@
+/* FavoriteMovies.css */
+.favorite-movies-container {
+  padding-top: 150px;
+  padding-left: 15px;
+  padding-right: 15px; /* Adjusted padding for mobile devices */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fav-header {
+  color: #fff;
+  font-size: 20px;
+}
+
+.clear-favorites-button {
+  background-color: transparent; /* Change background color to transparent */
+  color: #ff0000; /* Use red color for text */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.3s; /* Add transition for color */
+}
+
+.clear-favorites-button:hover {
+  color: #cc0000; /* Change text color on hover */
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets */
+@media (min-width: 600px) {
+  .favorite-movies-container {
+    padding: 80px; /* Adjusted padding for tablets */
+  }
+
+  .fav-header {
+    font-size: 24px; /* Increased font size for tablets */
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+  .favorite-movies-container {
+    padding: 140px; /* Original padding for desktops */
+  }
+
+  .fav-header {
+    font-size: 28px; /* Increased font size for desktops */
+  }
+}

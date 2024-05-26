@@ -1,0 +1,64 @@
+/* Base Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px); /* Adjust width for mobile-first */
+  height: 80px;
+  
+  background-color: rgba(0, 17, 21, 0.466);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-radius: 30px;
+  margin: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Ensure flex container */
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px -2px 0 rgba(87, 87, 87, 0.2);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #A8AEBF;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2%;
+  margin: 0 10px; /* Add margin for spacing between links */
+}
+
+.navbar a:hover {
+  color: #d6ddf0;
+}
+
+.logo {
+  width: 80px; /* Adjusted for better responsiveness */
+  height: auto;
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 600px) {
+  .navbar {
+    width: calc(100% - 40px); /* Adjust width for tablets */
+    height: 80px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .navbar {
+    width: calc(100% - 210px); /* Original width for desktops */
+    height: 80px;
+  }
+
+  .logo {
+    width: 100px; /* Original logo size for desktops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: calc(100% - 210px); /* Ensures consistency on larger screens */
+  }
+}
