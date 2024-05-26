@@ -5,16 +5,19 @@ import { FaHeart, FaStar, FaTimes } from 'react-icons/fa';
 import './styles/MovieCard.css';
 import posterImage from '../assets/p1.png';
 
-const MovieCard = ({ movie, onAddToFavorites, isFavoritePage }) => {
+const MovieCard = ({ movie, onAddToFavorites, isFavoritePage, onRemoveFromFavorites }) => {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites);
-  const isFavorite = favorites.some(fav => fav.id === movie.id);
+  const isFavorite = favorites.some((fav) => fav.id === movie.id);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleFavoriteToggle = (e) => {
     e.stopPropagation();
     if (isFavorite) {
       dispatch(removeFavorite(movie));
+      if (isFavoritePage) {
+        onRemoveFromFavorites('Removed from Favorites!');
+      }
     } else {
       dispatch(addFavorite(movie));
       onAddToFavorites('Added to Favorites!');
