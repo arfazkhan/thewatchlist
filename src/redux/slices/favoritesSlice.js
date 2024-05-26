@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const favoritesSlice = createSlice({
   name: 'favorites',
-  initialState: [], // Initial state as an empty array
+  initialState: [], 
   reducers: {
     addFavorite: (state, action) => {
       state.push(action.payload);
@@ -11,7 +11,7 @@ const favoritesSlice = createSlice({
       return state.filter(movie => movie.id !== action.payload.id);
     },
     clearFavorites: () => {
-      return []; // Clear all favorites
+      return []; 
     },
   },
 });

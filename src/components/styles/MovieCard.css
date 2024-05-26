@@ -7,7 +7,7 @@
     margin: 16px;
     color: white;
     transition: transform 0.3s;
-    width: 250px; /* Adjust width as needed */
+    width: 250px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   
@@ -17,14 +17,14 @@
   
   .rating-container {
     position: absolute;
-    top: 16px; /* Adjusted to ensure visibility */
+    top: 16px;
     left: 16px;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 4px 8px;
     border-radius: 4px;
-    z-index: 10; /* Ensure it appears above other elements */
+    z-index: 10;
   }
   
   .star-icon {
@@ -34,13 +34,13 @@
   
   .movie-rating {
     font-size: 1rem;
-    color: yellow; /* Ensure this color contrasts with the background */
+    color: yellow;
   }
   
   .small-heart-icon {
     color: red;
-    font-size: 1rem; /* Small heart icon */
-    margin-left: 8px; /* Space between rating and small heart */
+    font-size: 1rem;
+    margin-left: 8px; 
   }
   
   .poster-container {
@@ -58,7 +58,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@
   
   .favorite-button:hover .heart-icon {
     color: #ff0000;
-    transform: scale(1.2); /* Enlarge on hover */
+    transform: scale(1.2);
   }
   
   .favorite-button.favorited .heart-icon {
@@ -90,7 +90,7 @@
   
   .heart-icon {
     color: white;
-    font-size: 48px; /* Enlarge heart icon */
+    font-size: 48px;
   }
   
   .title-footer {

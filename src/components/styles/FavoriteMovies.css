@@ -2,7 +2,7 @@
 .favorite-movies-container {
   padding-top: 150px;
   padding-left: 15px;
-  padding-right: 15px; /* Adjusted padding for mobile devices */
+  padding-right: 15px; 
 }
 
 .header {
@@ -18,17 +18,17 @@
 }
 
 .clear-favorites-button {
-  background-color: transparent; /* Change background color to transparent */
-  color: #A8AEBF; /* Use red color for text */
+  background-color: transparent; 
+  color: #A8AEBF;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 4px;
-  transition: color 0.3s; /* Add transition for color */
+  transition: color 0.3s;
 }
 
 .clear-favorites-button:hover {
-  color: #cc0000; /* Change text color on hover */
+  color: #cc0000; 
 }
 
 .movie-list {
@@ -89,21 +89,21 @@
 /* Tablets */
 @media (min-width: 600px) {
   .favorite-movies-container {
-    padding: 80px; /* Adjusted padding for tablets */
+    padding: 80px; 
   }
 
   .fav-header {
-    font-size: 24px; /* Increased font size for tablets */
+    font-size: 24px;
   }
 }
 
 /* Desktops */
 @media (min-width: 992px) {
   .favorite-movies-container {
-    padding: 140px; /* Original padding for desktops */
+    padding: 140px; 
   }
 
   .fav-header {
-    font-size: 28px; /* Increased font size for desktops */
+    font-size: 28px; 
   }
 }
