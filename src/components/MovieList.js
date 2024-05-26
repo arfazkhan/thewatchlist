@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 import { FaSearch } from 'react-icons/fa';
 import './styles/MovieList.css';
 
-const MovieList = () => {
+const MovieList = ({ onAddToFavorites }) => {
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.filteredItems);
   const status = useSelector((state) => state.movies.status);
@@ -39,9 +39,13 @@ const MovieList = () => {
         <FaSearch className="search-icon" />
       </div>
       <div className="movie-list">
-        {movies.length === 0 && searchQuery.length >= 3 && <div className='no'>No movies found.</div>}
+        {movies.length === 0 && searchQuery.length >= 3 && <div>No movies found.</div>}
         {movies.map(movie => (
-          <MovieCard key={movie.id} movie={movie} />
+          <MovieCard
+            key={movie.id}
+            movie={movie}
+            onAddToFavorites={onAddToFavorites}
+          />
         ))}
       </div>
     </div>
